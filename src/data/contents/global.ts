@@ -1,17 +1,20 @@
 const GLOBAL_CONTENT = {
   navbar: {
-    title: "Simpeka",
-    sidebar: {
-      heading: "Menu Navigasi",
-      links: [
-        { name: "Beranda", link: "/", icon: "House" },
-        { name: "Layanan", link: "/service", icon: "Layers" },
-        { name: "Verifikasi", link: "/verify", icon: "ShieldCheck" },
-      ],
+    title: "Sipena.",
+    icon: "Menu",
+    labels: {
+      heading: "Menu",
+      back: "Tutup",
     },
-    cta: {
+    links: [
+      { label: "Beranda", href: "/", icon: "House" },
+      { label: "Layanan", href: "/service", icon: "Layers" },
+      { label: "Verifikasi", href: "/verify", icon: "ShieldCheck" },
+    ],
+    login: {
       aria_label: "Submit",
       label: "Masuk",
+      href: "#",
     },
   },
   footer: {
@@ -44,6 +47,6 @@ const GLOBAL_CONTENT = {
       ],
     },
   },
-};
+} as const;
 
 export default GLOBAL_CONTENT;

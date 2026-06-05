@@ -1,35 +1,23 @@
 /* base schema */
-@theme {
-  /* primary-color */
-  --color-primary: var(--color-slate-50);
-  --color-primary-light: var(--color-slate-100);
-
-  /* secondary-color */
-  --color-secondary: var(--color-violet-900);
-  --color-secondary-light: var(--color-violet-800);
-  --color-secondary-dark: var(--color-violet-950);
-
-  --color-accent: var(--color-amber-500);
-  --color-accent-light: var(--color-amber-400);
-  --color-accent-dark: var(--color-amber-600);
+@layer base {
+  :root {
+    /* color-schema */
+    --primary: #0805f1;
+    --background: #ffffff;
+    --foreground: #030812;
+    --muted: #f0f1f5;
+    --muted-foreground: #4e576a;
+    --border: #bfc6d4;
+  }
 }
 
-/* implementation color */
+/* implementation */
 @theme {
-  /* background */
-  --color-bg-primary: var(--color-primary);
-  --color-bg-secondary: var(--color-secondary);
-  --color-bg-accent: var(--color-accent);
-
-  /* text */
-  --color-foreground: var(--color-slate-900);
-  --color-foreground-body: var(--color-slate-500);
-  --color-foreground-muted: var(--color-slate-400);
-  --color-foreground-accent: var(--color-accent);
-  --color-foreground-light: var(--color-primary);
-
-  --color-bdr: var(--color-slate-500);
-  --color-bdr-light: var(--color-slate-300);
-  --color-bdr-dark: var(--color-slate-700);
-  --color-bdr-accent: var(--color-accent);
+  /* primary-color */
+  --color-primary: var(--primary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
 }
