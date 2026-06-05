@@ -10,7 +10,6 @@ const soraFont = Sora({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sora",
-  weight: ["500"],
 });
 
 export { interFont, soraFont };

@@ -1,18 +1,20 @@
 export const HOME_CONTENT = {
   hero: {
-    heading: "TOEFL resmi berbasis blockchain",
-    sub: "Simpeka menyediakan ujian TOEFL yang mudah diakses dengan jaminan keaslian dokumen lewat integrasi smart contract.",
-    button: [
+    heading: "Sistem informasi pelayanan bahasa",
+    sub: "universitas halu oleo kendari",
+    describe:
+      "Solusi digital terintegrasi untuk kebutuhan ujian TOEFL dan layanan bahasa di Universitas Halu Oleo.",
+    cta: [
       {
-        to: "#",
-        label: "Mulai sekarang",
-        icon: "ArrowRight",
+        href: "#",
+        label: "Daftar sekarang",
+        icon: "ChevronRight",
         variant: "default",
       },
       {
-        to: "#",
+        href: "#",
         label: "Pelajari lebih lanjut",
-        icon: "ArrowRight",
+        icon: "ChevronRight",
         variant: "outline",
       },
     ],

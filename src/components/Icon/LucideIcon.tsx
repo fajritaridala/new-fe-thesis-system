@@ -7,6 +7,7 @@ import {
   FingerprintPattern,
   Globe,
   Menu,
+  ChevronRight,
 } from "lucide-react";
 import type { LucideIcon, LucideProps } from "lucide-react";
 
@@ -23,6 +24,7 @@ const IconMap: Record<string, LucideIcon> = {
   FingerprintPattern,
   Globe,
   Menu,
+  ChevronRight,
 };
 
 export default function LucideIcon(props: PropTypes) {
