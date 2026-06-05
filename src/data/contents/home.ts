@@ -19,27 +19,26 @@ export const HOME_CONTENT = {
       },
     ],
   },
-  why: {
-    heading: "Mengapa memilih simpeka?",
-    sub: "Simpeka adalah platform tes TOEFL terpercaya dengan jaminan keaslian sertifikatnya melalui teknologi keamanan Blockchain dan Smart Contract.",
-    card: [
+  about: {
+    title: "Integritas layanan",
+    heading: "Standar baru dalam validitas sertifikat",
+    describe:
+      "Sipena mengintegrasikan teknologi Blockchain dan Smart Contract untuk menghadirkan ekosistem ujian TOEFL yang sepenuhnya transparan, otomatis, dan bebas dari risiko pemalsuan.",
+    cards: [
       {
-        headline: "Keaslian Terjamin",
+        title: "Kriptografi Blockchain",
         describe:
-          "Teknologi blockchain mencatat setiap sertifikat secara permanen untuk menutup total celah pemalsuan.",
-        icon: "FingerprintPattern",
+          "Setiap sertifikat diterbitkan ke dalam jaringan dekentralisasi yang permanen, membuat data kelulusan mustahil untuk dimanipulasi atau diubah oleh siapa pun.",
       },
       {
-        headline: "Standar Internasional",
+        title: "Otomatisasi Smart Contract",
         describe:
-          "Sistem penilaian TOEFL dirancang secara ketat demi menghasilkan akurasi skor yang valid.",
-        icon: "Globe",
+          "Proses verifikasi skor berjalan secara mandiri lewat kode digital terprogram, memangkas birokrasi dan menghilangkan intervensi pihak ketiga.",
       },
       {
-        headline: "Sistem Kebal Manipulasi",
+        title: "Verifikasi Instan",
         describe:
-          "Integrasi smart contract mengotomatisasi proses verifikasi secara transparan tanpa intervensi pihak ketiga.",
-        icon: "Lock",
+          "Validasi keaslian dokumen dapat dilakukan secara real-time oleh pihak universitas maupun instansi luar melalui sistem pelacakan yang transparan.",
       },
     ],
   },
