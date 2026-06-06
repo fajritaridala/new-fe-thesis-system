@@ -7,24 +7,22 @@ export default function Hero() {
   const { heading, sub, describe, cta } = HOME_CONTENT.hero;
 
   return (
-    <section className="pt-18">
-      <div className="px-3 lg:px-28">
-        <p className="text-primary mt-8 text-center text-sm capitalize lg:text-base">
-          {sub}
-        </p>
-        <h1 className="font-sora my-6 text-center text-4xl leading-tight font-bold tracking-tight capitalize lg:text-6xl">
+    <section className="space-y-8 pt-24 lg:space-y-12 lg:pt-28">
+      <div className="space-y-4 px-4 lg:space-y-8 lg:px-28">
+        <p className="text-primary text-center capitalize">{sub}</p>
+        <h1 className="font-sora text-center text-4xl font-bold tracking-tight capitalize lg:text-6xl lg:leading-14">
           {heading}
         </h1>
-        <p className="text-muted-foreground text-center leading-relaxed lg:px-22 lg:text-lg">
+        <p className="text-muted-foreground text-center leading-relaxed lg:px-22">
           {describe}
         </p>
       </div>
-      <div className="mt-10 flex flex-col justify-center-safe space-y-4 lg:flex-row lg:items-center-safe lg:gap-3 lg:space-y-0">
-        {cta.map((item, index) => (
-          <Button key={index} asChild size="lg" variant={item.variant}>
-            <Link href={item.href}>
-              <p>{item.label}</p>
-              <LucideIcon icon={item.icon} />
+      <div className="flex flex-col justify-center-safe gap-2 lg:flex-row lg:gap-4">
+        {cta.map(({ variant, href, label, icon }, index) => (
+          <Button key={index} asChild size="lg" variant={variant}>
+            <Link href={href}>
+              <p>{label}</p>
+              <LucideIcon icon={icon} />
             </Link>
           </Button>
         ))}

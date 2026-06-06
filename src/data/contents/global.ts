@@ -18,32 +18,39 @@ const GLOBAL_CONTENT = {
     },
   },
   footer: {
-    left_section: {
-      heading: "Simpeka",
-      describe:
-        "Platform tes TOEFL modern yang mengintegrasikan teknologi blockchain untuk memastikan keaslian dan keamanan sertifikat Anda.",
+    about: {
+      title: "Sipena.",
+      description:
+        "Sipena menghadirkan ujian TOEFL resmi dengan sertifikat digital berbasis blockchain, valid, transparan, dan bebas pemalsuan.",
     },
-    center_section: {
-      heading: "Navigasi",
+    links: {
+      title: "Tautan Cepat",
       links: [
-        { name: "Beranda", link: "/" },
-        { name: "Layanan", link: "/service" },
-        { name: "Verifikasi", link: "/verify" },
+        { label: "Beranda", href: "/" },
+        { label: "Layanan Ujian", href: "/service" },
+        { label: "Verifikasi", href: "/verify" },
       ],
     },
-    right_section: {
-      heading: "Kontak Kami",
-      links: [
-        { icon: "", to: "0401-3195241" },
-        { icon: "", to: "+62 813-9295-5256" },
-        { icon: "", to: "uptbahasa.unhalu@gmail.com" },
-      ],
-    },
-    bottom_section: {
-      heading: "Hak Cipta © 2025 Simpeka. Seluruh hak cipta dilindungi.",
+    contact: {
+      title: "Kontak",
       socials: [
-        { icon: "", to: "" },
-        { icon: "", to: "" },
+        {
+          icon: "Mail",
+          label: "info@sipena.id",
+          href: "mailto:info@sipena.id",
+        },
+        {
+          icon: "MapPin",
+          label: "UPA Bahasa UHO, Kendari, Sulawesi Tenggara",
+          href: "#",
+        },
+      ],
+    },
+    copyright: {
+      title: "Hak Cipta © 2025–2026 Sipena. Seluruh hak cipta dilindungi.",
+      links: [
+        { label: "Kebijakan Privasi", href: "#" },
+        { label: "Syarat & Ketentuan", href: "#" },
       ],
     },
   },

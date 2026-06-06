@@ -1,3 +1,4 @@
+import Heading from "@/components/commons/Heading";
 import {
   Card,
   CardDescription,
@@ -10,26 +11,24 @@ export default function About() {
   const { title, heading, describe, cards } = HOME_CONTENT.about;
 
   return (
-    <section className="bg-muted mt-12 flex-col rounded-xl px-4 py-6 lg:mt-16 lg:flex lg:gap-6 lg:rounded-4xl lg:px-8 lg:py-12">
+    <section className="bg-background-light grid grid-cols-1 gap-6 rounded-xl px-4 py-8 lg:gap-12 lg:rounded-2xl lg:px-8 lg:py-16">
       <div className="lg:text-center">
-        <h1 className="text-primary mb-3 text-xs uppercase lg:mb-6 lg:text-sm">
-          {title}
-        </h1>
-        <h2 className="font-sora mb-6 text-3xl leading-tight font-bold tracking-tight lg:mb-8 lg:px-52 lg:text-4xl">
-          {heading}
-        </h2>
-        <p className="text-muted-foreground text-justify text-base leading-relaxed lg:px-46 lg:text-center lg:text-lg">
-          {describe}
-        </p>
+        <Heading title={title} heading={heading} describe={describe} />
       </div>
-      <div className="mt-8 grid-cols-3 gap-6 space-y-8 lg:grid lg:space-y-0">
-        {cards.map((card, index) => (
-          <Card key={index} className="bg-background rounded-xl lg:text-center">
+
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6">
+        {cards.map(({ title, describe }, index) => (
+          <Card
+            key={index}
+            className="bg-background lg:bg-background-light border-border rounded-2xl border shadow-none ring-0 transition-all delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+          >
             <CardHeader>
-              <CardTitle className="font-sora my-2 text-xl font-bold tracking-tight capitalize lg:text-2xl">
-                {card.title}
+              <CardTitle className="font-sora text-xl font-bold tracking-tight capitalize lg:text-3xl">
+                {title}
               </CardTitle>
-              <CardDescription>{card.describe}</CardDescription>
+              <CardDescription className="text-base leading-relaxed lg:text-left">
+                {describe}
+              </CardDescription>
             </CardHeader>
           </Card>
         ))}

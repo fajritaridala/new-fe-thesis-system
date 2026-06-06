@@ -1,90 +1,78 @@
 export const HOME_CONTENT = {
   hero: {
     heading: "Sistem informasi pelayanan bahasa",
-    sub: "universitas halu oleo kendari",
+    sub: "UPA Bahasa, Universitas Halu Oleo Kendari",
     describe:
-      "Solusi digital terintegrasi untuk kebutuhan ujian TOEFL dan layanan bahasa di Universitas Halu Oleo.",
+      "Daftar, ikuti ujian, dan terima sertifikat digital anti-palsu langsung di jaringan blockchain, semua dalam satu platform.",
     cta: [
       {
         href: "#",
-        label: "Daftar sekarang",
+        label: "Daftar Ujian Sekarang",
         icon: "ChevronRight",
         variant: "default",
       },
       {
         href: "#",
-        label: "Pelajari lebih lanjut",
+        label: "Lihat Cara Kerjanya",
         icon: "ChevronRight",
         variant: "outline",
       },
     ],
   },
   about: {
-    title: "Integritas layanan",
-    heading: "Standar baru dalam validitas sertifikat",
+    title: "Mengapa Sipena?",
+    heading: "Standar baru validitas sertifikat",
     describe:
-      "Sipena mengintegrasikan teknologi Blockchain dan Smart Contract untuk menghadirkan ekosistem ujian TOEFL yang sepenuhnya transparan, otomatis, dan bebas dari risiko pemalsuan.",
+      "Sipena mengintegrasikan teknologi Blockchain dan Smart Contract untuk menghadirkan ekosistem yang sepenuhnya transparan, otomatis, dan bebas dari risiko pemalsuan.",
     cards: [
       {
-        title: "Kriptografi Blockchain",
+        title: "Keamanan Permanen",
         describe:
-          "Setiap sertifikat diterbitkan ke dalam jaringan dekentralisasi yang permanen, membuat data kelulusan mustahil untuk dimanipulasi atau diubah oleh siapa pun.",
+          "Sertifikat diterbitkan langsung ke jaringan blockchain terdesentralisasi. Permanen dan tidak bisa diubah.",
       },
       {
-        title: "Otomatisasi Smart Contract",
+        title: "Otomatisasi Penuh",
         describe:
-          "Proses verifikasi skor berjalan secara mandiri lewat kode digital terprogram, memangkas birokrasi dan menghilangkan intervensi pihak ketiga.",
+          "Smart contract memproses verifikasi skor secara mandiri. Bebas birokrasi dan intervensi pihak ketiga.",
       },
       {
-        title: "Verifikasi Instan",
+        title: "Validasi Instan",
         describe:
-          "Validasi keaslian dokumen dapat dilakukan secara real-time oleh pihak universitas maupun instansi luar melalui sistem pelacakan yang transparan.",
+          "Pihak mana pun dapat memverifikasi keaslian sertifikat secara real-time, cukup dengan satu tautan.",
       },
     ],
   },
-  how: {
-    heading: "Bagaimana cara mendapatkan sertifikat?",
-    sub: "Tiga langkah ringkas untuk memperoleh sertifikat TOEFL resmi yang terverifikasi blockchain.",
-    card: [
-      {
-        headline: "Registrasi & Pilih Tes",
-        describe:
-          "Buat akun Anda di platform lalu tentukan tipe tes TOEFL yang sesuai dengan kebutuhan.",
-      },
-      {
-        headline: "Ikuti Ujian",
-        describe:
-          "Anda cukup mendatangi lokasi pengerjaan fisik yang telah dijadwalkan sebelumnya.",
-      },
-      {
-        headline: "Terima Sertifikat",
-        describe:
-          "Sertifikat resmi Anda akan terbit otomatis dan langsung tercatat permanen di jaringan blockchain.",
-      },
-    ],
-  },
-  testimonials: {
-    heading: "Testimoni Pengguna Simpeka",
-    sub: "Ulasan jujur dari mereka yang telah menggunakan sistem sertifikasi TOEFL kami.",
-    card: [
-      {
-        name: "Aisha Rahmawati",
-        job: "Mahasiswa S2",
-        describe:
-          "Proses registrasi hingga ujian berjalan sangat cepat. Keberadaan verifikasi blockchain memberikan rasa aman penuh terhadap validitas data. Sistem ini wajib dicoba oleh para pemburu beasiswa.",
-      },
-      {
-        name: "Budi Santoso",
-        job: "Profesional",
-        describe:
-          "Simpeka sangat membantu persiapan ujian resmi saya melalui modul tes prediksi yang akurat. Antarmuka platform ini sangat intuitif dan stabil saat digunakan.",
-      },
-    ],
-  },
-  cta: {
-    headline: "Siap Sertifikasi TOEFL Bersama Simpeka?",
+  workflow: {
+    title: "Alur Kerja",
+    heading: "Mekanisme Ujian Hingga Penerbitan Sertifikat",
     describe:
-      "Platform Simpeka siap membantu Anda meraih target akademik dan profesional melalui sertifikat resmi terverifikasi blockchain.",
-    cta: "Mulai Tes Sekarang",
+      "Dari pendaftaran daring hingga sertifikat blockchain prosesnya transparan, cepat, dan tanpa antrian.",
+    timelines: [
+      {
+        title: "Pendaftaran & Validasi",
+        description:
+          "Registrasi akun dan pilih jadwal ujian Anda. Verifikasi identitas selesai sepenuhnya secara daring.",
+      },
+      {
+        title: "Pelaksanaan Ujian",
+        description:
+          "Ikuti ujian TOEFL secara langsung di UPT Bahasa UHO sesuai jadwal yang sudah Anda pilih saat pendaftaran.",
+      },
+      {
+        title: "Penerbitan On-Chain",
+        description:
+          "Smart contract mencetak sertifikat digital Anda ke blockchain. Transparan, otomatis, dan absolut.",
+      },
+    ],
+  },
+  action: {
+    tag: "Mulai Hari Ini",
+    headline: "Satu Ujian. Sertifikat yang Berlaku Selamanya.",
+    describe:
+      "Bergabunglah bersama mahasiswa UHO yang sudah membuktikan kemampuan bahasa mereka dengan sertifikat digital yang tak tergoyahkan. Daftar sekarang proses hanya butuh 2 menit.",
+    cta: {
+      href: "#",
+      label: "Mulai Ujian Sekarang",
+    },
   },
 } as const;
