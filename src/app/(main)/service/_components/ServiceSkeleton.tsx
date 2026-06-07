@@ -8,7 +8,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export default function ServiceSkeleton() {
   return (
-    <Card className="bg-background-light rounded-xl">
+    <Card className="bg-background-light rounded-xl ring-0">
       <CardHeader>
         <Skeleton className="h-4 w-1/2" />
         <Skeleton className="h-4 w-2/5" />

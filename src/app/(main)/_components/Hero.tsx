@@ -9,10 +9,10 @@ export default function Hero() {
   return (
     <section className="space-y-8 pt-24 lg:space-y-12 lg:pt-28">
       <div className="space-y-4 px-4 lg:space-y-8 lg:px-28">
-        <p className="text-primary text-center capitalize">{sub}</p>
-        <h1 className="font-sora text-center text-4xl font-bold tracking-tight capitalize lg:text-6xl lg:leading-14">
+        <h1 className="text-primary text-center capitalize">{sub}</h1>
+        <h2 className="font-sora text-center text-4xl font-bold tracking-tight capitalize lg:text-6xl lg:leading-14">
           {heading}
-        </h1>
+        </h2>
         <p className="text-muted-foreground text-center leading-relaxed lg:px-22">
           {describe}
         </p>

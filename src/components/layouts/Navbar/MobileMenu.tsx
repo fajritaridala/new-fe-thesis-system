@@ -33,6 +33,7 @@ export default function MobileMenu() {
           {links.map((link, index) => (
             <li key={index}>
               <Link
+                onClick={handleOpenMenu}
                 href={link.href}
                 className="hover:bg-muted group border-border flex items-center-safe gap-6 border-b px-6 py-4 transition-all delay-75 duration-200"
               >

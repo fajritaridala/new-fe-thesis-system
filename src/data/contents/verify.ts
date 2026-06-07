@@ -1,10 +1,15 @@
 export const VERIFY_CONTENT = {
+  title: "Verifikasi Sertifikat",
   heading: "Verifikasi Keaslian Sertifikat",
-  sub: "Platform Simpeka memvalidasi validitas dokumen Anda secara instan melalui jaringan blockchain.",
+  description:
+    "Pastikan setiap sertifikat yang kamu terima adalah asli. Simpeka memverifikasi dokumen secara instan dengan teknologi blockchain yang tidak bisa dimanipulasi.",
   cta_back: "Kembali",
   card: {
-    heading: "Berkas sertifikat dapat diklik atau diseret langsung ke area ini",
-    format: "Format dokumen yang didukung: PDF",
-    cta_verify: "Verifikasi Sekarang",
+    heading: "Unggah atau seret sertifikat kamu ke sini",
+    format: "Mendukung format PDF",
+    cta_verify: {
+      label: "Verifikasi Sekarang",
+      href: "#",
+    },
   },
-};
+} as const;
