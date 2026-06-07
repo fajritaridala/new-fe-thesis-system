@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { HOME_CONTENT } from "@/data/contents/home";
+import { HOME_CONTENT } from "@/data/contents/main/home";
 
 export default function About() {
   const { title, heading, describe, cards } = HOME_CONTENT.about;

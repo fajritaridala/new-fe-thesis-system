@@ -1,4 +1,4 @@
-import { SERVICE_CONTENT } from "@/data/contents/service";
+import { SERVICE_CONTENT } from "@/data/contents/main/service";
 
 export default function HeroService() {
   const { heading, description, title } = SERVICE_CONTENT;

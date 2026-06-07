@@ -14,7 +14,7 @@ const GLOBAL_CONTENT = {
     login: {
       aria_label: "Submit",
       label: "Masuk",
-      href: "/auth/login",
+      href: "/login",
     },
   },
   footer: {

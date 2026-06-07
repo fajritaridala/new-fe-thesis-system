@@ -56,6 +56,7 @@ export default function MobileMenu() {
         </div>
         <div className="w-full px-4">
           <Button
+            onClick={handleOpenMenu}
             asChild
             aria-label={login.aria_label}
             size="lg"

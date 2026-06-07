@@ -1,7 +1,7 @@
 import Heading from "@/components/commons/Heading";
 import Timeline from "@/components/primitives/Timeline";
 
-import { HOME_CONTENT } from "@/data/contents/home";
+import { HOME_CONTENT } from "@/data/contents/main/home";
 
 export default function WorkFlow() {
   const { title, heading, describe, timelines } = HOME_CONTENT.workflow;

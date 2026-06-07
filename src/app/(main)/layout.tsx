@@ -1,13 +1,8 @@
 import Footer from "@/components/layouts/Footer";
 import Navbar from "@/components/layouts/Navbar";
-import { ReactNode } from "react";
+import { SharedLayoutProps } from "@/types/layout";
 
-type Props = {
-  children: ReactNode;
-};
-
-export default function MainLayout(props: Props) {
-  const { children } = props;
+export default function MainLayout({ children }: SharedLayoutProps) {
   return (
     <>
       <Navbar />

@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { HOME_CONTENT } from "@/data/contents/home";
+import { HOME_CONTENT } from "@/data/contents/main/home";
 import Link from "next/link";
 
 export default function Action() {

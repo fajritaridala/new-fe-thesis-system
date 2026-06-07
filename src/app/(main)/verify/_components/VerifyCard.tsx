@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { VERIFY_CONTENT } from "@/data/contents/verify";
+import { VERIFY_CONTENT } from "@/data/contents/main/verify";
 import Link from "next/link";
 
 export default function VerifyCard() {
