@@ -1,4 +1,4 @@
-import Heading from "@/components/commons/Heading";
+import { Heading } from "@/components/common/Heading";
 import Timeline from "@/components/primitives/Timeline";
 
 import { HOME_CONTENT } from "@/data/contents/main/home";
@@ -9,7 +9,7 @@ export default function WorkFlow() {
   return (
     <section className="space-y-8 lg:space-y-12">
       <div className="lg:text-center">
-        <Heading title={title} heading={heading} describe={describe} />
+        <Heading title={title} headline={heading} description={describe} />
       </div>
       <div>
         <Timeline items={timelines} />

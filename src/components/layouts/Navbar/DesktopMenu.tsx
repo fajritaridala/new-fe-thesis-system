@@ -20,7 +20,12 @@ export default function DesktopMenu() {
         ))}
       </ul>
 
-      <Button asChild aria-label={login.aria_label} size="lg">
+      <Button
+        asChild
+        aria-label={login.aria_label}
+        size="lg"
+        className="lg:h-12"
+      >
         <Link href={login.href}>
           <p className="text-background">{login.label}</p>
         </Link>

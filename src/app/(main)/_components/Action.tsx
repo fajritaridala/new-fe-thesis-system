@@ -16,7 +16,7 @@ export default function Action() {
 
   return (
     <section>
-      <Card className="bg-primary space-y-4 rounded-xl lg:space-y-8 lg:px-6 lg:py-12">
+      <Card className="bg-primary space-y-4 lg:space-y-8 lg:px-6 lg:py-16">
         <CardHeader className="space-y-4">
           <Badge
             variant="secondary"
@@ -24,7 +24,7 @@ export default function Action() {
           >
             {tag}
           </Badge>
-          <CardTitle className="font-sora text-primary-foreground text-3xl font-bold lg:text-4xl">
+          <CardTitle className="font-sora text-primary-foreground text-3xl font-bold lg:text-5xl">
             {headline}
           </CardTitle>
           <CardDescription className="text-muted text-base">

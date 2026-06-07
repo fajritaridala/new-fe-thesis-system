@@ -14,7 +14,7 @@ export default function VerifyCard() {
   const { heading, format, cta_verify } = VERIFY_CONTENT.card;
 
   return (
-    <Card className="bg-background-light mx-auto rounded-xl px-6 ring-0 lg:w-xl">
+    <Card className="bg-background-light mx-auto px-6 ring-0 lg:w-xl">
       <CardHeader className="bg-muted flex h-44 flex-col items-center-safe justify-center-safe rounded-lg text-center lg:h-72">
         <CardTitle className="text-sm">{heading}</CardTitle>
         <CardDescription>{format}</CardDescription>

@@ -1,4 +1,4 @@
-import Heading from "@/components/commons/Heading";
+import { Heading } from "@/components/common/Heading";
 import {
   Card,
   CardDescription,
@@ -11,9 +11,9 @@ export default function About() {
   const { title, heading, describe, cards } = HOME_CONTENT.about;
 
   return (
-    <section className="bg-background-light grid grid-cols-1 gap-6 rounded-xl px-4 py-8 lg:gap-12 lg:rounded-2xl lg:px-8 lg:py-16">
+    <section className="bg-background-light grid grid-cols-1 gap-6 px-4 py-8 lg:gap-12 lg:rounded-2xl lg:px-8 lg:py-16">
       <div className="lg:text-center">
-        <Heading title={title} heading={heading} describe={describe} />
+        <Heading title={title} headline={heading} description={describe} />
       </div>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6">

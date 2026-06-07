@@ -1,8 +1,8 @@
 export const HOME_CONTENT = {
   hero: {
-    heading: "Sistem informasi pelayanan bahasa",
-    sub: "UPA Bahasa, Universitas Halu Oleo Kendari",
-    describe:
+    title: "UPA Bahasa, Universitas Halu Oleo Kendari",
+    headline: "Sistem informasi pelayanan bahasa",
+    description:
       "Daftar, ikuti ujian, dan terima sertifikat digital anti-palsu langsung di jaringan blockchain, semua dalam satu platform.",
     cta: [
       {
