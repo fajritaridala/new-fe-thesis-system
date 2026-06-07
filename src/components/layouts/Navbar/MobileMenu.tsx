@@ -1,13 +1,14 @@
 "use client";
 
 import LucideIcon from "@/components/Icon";
+import { Button } from "@/components/ui/button";
 import GLOBAL_CONTENT from "@/data/contents/global";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function MobileMenu() {
-  const { icon, labels, links } = GLOBAL_CONTENT.navbar;
+  const { icon, labels, links, login } = GLOBAL_CONTENT.navbar;
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   const handleOpenMenu = () => setIsOpenMenu(!isOpenMenu);
 
@@ -19,36 +20,50 @@ export default function MobileMenu() {
 
       <div
         className={cn(
-          "bg-background absolute inset-0 h-dvh w-full -translate-x-full px-2 transition-transform delay-100 duration-300 ease-in-out",
+          "bg-background transition-transformj absolute inset-0 flex h-dvh w-full -translate-x-full flex-col justify-between px-2 py-6 delay-100 duration-300 ease-in-out",
           { "translate-x-0": isOpenMenu },
         )}
       >
-        <div className="border-border flex justify-between border-b px-4 py-6">
-          <h2 className="text-muted-foreground uppercase">{labels.heading}</h2>
-          <button onClick={handleOpenMenu}>
-            <p className="hover:text-primary text-sm">{labels.back}</p>
-          </button>
+        <div className="">
+          <div className="border-border flex justify-between border-b px-4 pb-6">
+            <h2 className="text-muted-foreground uppercase">
+              {labels.heading}
+            </h2>
+            <button onClick={handleOpenMenu}>
+              <p className="hover:text-primary text-sm">{labels.back}</p>
+            </button>
+          </div>
+          <ul>
+            {links.map((link, index) => (
+              <li key={index}>
+                <Link
+                  onClick={handleOpenMenu}
+                  href={link.href}
+                  className="hover:bg-muted group border-border flex items-center-safe gap-6 border-b px-6 py-4 transition-all delay-75 duration-200"
+                >
+                  <LucideIcon
+                    icon={link.icon}
+                    size={18}
+                    className="text-foreground group-hover:text-primary delay-75 duration-200"
+                  />
+                  <p className="group-hover:text-primary text-foreground delay-75 duration-200">
+                    {link.label}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ul>
-          {links.map((link, index) => (
-            <li key={index}>
-              <Link
-                onClick={handleOpenMenu}
-                href={link.href}
-                className="hover:bg-muted group border-border flex items-center-safe gap-6 border-b px-6 py-4 transition-all delay-75 duration-200"
-              >
-                <LucideIcon
-                  icon={link.icon}
-                  size={18}
-                  className="text-foreground group-hover:text-primary delay-75 duration-200"
-                />
-                <p className="group-hover:text-primary text-foreground delay-75 duration-200">
-                  {link.label}
-                </p>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="w-full px-4">
+          <Button
+            asChild
+            aria-label={login.aria_label}
+            size="lg"
+            className="w-full"
+          >
+            <Link href={login.href}>{login.label}</Link>
+          </Button>
+        </div>
       </div>
     </>
   );
