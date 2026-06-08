@@ -1,14 +1,13 @@
+import LucideIcon from "@/components/shared/lucide-icon";
 import { Button } from "@/components/ui/button";
-import GLOBAL_CONTENT from "@/data/contents/global";
 import Link from "next/link";
+import { NavbarProps } from ".";
 
-export default function DesktopMenu() {
-  const { links, login } = GLOBAL_CONTENT.navbar;
-
+export default function DesktopMenu({ data }: NavbarProps) {
   return (
     <div className="flex items-center-safe gap-10">
       <ul className="flex gap-10">
-        {links.map((link, index) => (
+        {data.links.map((link, index) => (
           <li key={index}>
             <Link
               href={link.href}
@@ -22,12 +21,13 @@ export default function DesktopMenu() {
 
       <Button
         asChild
-        aria-label={login.aria_label}
+        aria-label={data.login.aria_label}
         size="lg"
         className="lg:h-12"
       >
-        <Link href={login.href}>
-          <p className="text-background">{login.label}</p>
+        <Link href={data.login.href}>
+          <span className="text-background">{data.login.label}</span>
+          <LucideIcon icon={data.login.icon} className="size-5" />
         </Link>
       </Button>
     </div>

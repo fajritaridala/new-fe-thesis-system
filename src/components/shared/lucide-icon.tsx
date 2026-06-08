@@ -1,13 +1,17 @@
 import {
   ArrowRight,
+  ArrowUpRight,
+  ArrowLeft,
   House,
   Layers,
   ShieldCheck,
-  Lock,
-  FingerprintPattern,
-  Globe,
   Menu,
-  ChevronRight,
+  LogIn,
+  FingerprintPattern,
+  Zap,
+  ScanQrCode,
+  Mail,
+  MapPin,
 } from "lucide-react";
 import type { LucideIcon, LucideProps } from "lucide-react";
 
@@ -20,11 +24,15 @@ const IconMap: Record<string, LucideIcon> = {
   House,
   Layers,
   ShieldCheck,
-  Lock,
-  FingerprintPattern,
-  Globe,
   Menu,
-  ChevronRight,
+  ArrowUpRight,
+  ArrowLeft,
+  LogIn,
+  FingerprintPattern,
+  Zap,
+  ScanQrCode,
+  Mail,
+  MapPin,
 };
 
 export default function LucideIcon(props: PropTypes) {

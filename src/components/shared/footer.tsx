@@ -1,8 +1,9 @@
-import GLOBAL_CONTENT from "@/data/contents/global";
+import LucideIcon from "./lucide-icon";
 import Link from "next/link";
+import SHARED_CONTENT from "@/data/contents/shared-content";
 
 export default function Footer() {
-  const { about, contact, copyright, links } = GLOBAL_CONTENT.footer;
+  const { about, contact, copyright, links } = SHARED_CONTENT.footer;
 
   return (
     <footer className="bg-background-light mt-12 space-y-8 px-4 py-8 lg:mt-16 lg:space-y-12 lg:px-16 lg:py-14">
@@ -28,8 +29,12 @@ export default function Footer() {
           <ul className="space-y-1">
             {contact.socials.map((item, index) => (
               <li key={index}>
-                <Link href={item.href} className="hover:text-primary">
-                  {item.label}
+                <Link
+                  href={item.href}
+                  className="hover:text-primary flex items-center-safe gap-2"
+                >
+                  <LucideIcon icon={item.icon} className="size-5" />
+                  <span>{item.label}</span>
                 </Link>
               </li>
             ))}

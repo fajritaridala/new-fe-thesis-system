@@ -1,3 +1,4 @@
+import LucideIcon from "@/components/shared/lucide-icon";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -8,27 +9,29 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { HOME_CONTENT } from "@/data/contents/main/home";
+import { HOME_CONTENT } from "@/data/contents/main/home-content";
 import Link from "next/link";
 
-export default function Action() {
-  const { tag, cta, describe, headline } = HOME_CONTENT.action;
+export interface ActionSectionProps {
+  data: typeof HOME_CONTENT.action;
+}
 
+export default function Action({ data }: ActionSectionProps) {
   return (
-    <section>
+    <section id="action">
       <Card className="bg-primary space-y-4 lg:space-y-8 lg:px-6 lg:py-16">
         <CardHeader className="space-y-4">
           <Badge
             variant="secondary"
             className="bg-primary-foreground text-foreground h-6 px-4 capitalize"
           >
-            {tag}
+            {data.tag}
           </Badge>
           <CardTitle className="font-sora text-primary-foreground text-3xl font-bold lg:text-5xl">
-            {headline}
+            {data.headline}
           </CardTitle>
           <CardDescription className="text-muted text-base">
-            {describe}
+            {data.describe}
           </CardDescription>
         </CardHeader>
         <CardFooter>
@@ -38,7 +41,10 @@ export default function Action() {
               size="lg"
               className="bg-background hover:bg-background/90 text-foreground w-full lg:w-fit"
             >
-              <Link href={cta.href}>{cta.label}</Link>
+              <Link href={data.cta.href}>
+                <span>{data.cta.label}</span>
+                <LucideIcon icon={data.cta.icon} className="size-5" />
+              </Link>
             </Button>
           </CardAction>
         </CardFooter>

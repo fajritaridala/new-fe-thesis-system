@@ -1,6 +1,6 @@
-import Footer from "@/components/layouts/Footer";
-import Navbar from "@/components/layouts/Navbar";
-import { SharedLayoutProps } from "@/types/layout";
+import Footer from "@/components/shared/footer";
+import Navbar from "@/components/shared/navbar";
+import { SharedLayoutProps } from "../layout";
 
 export default function MainLayout({ children }: SharedLayoutProps) {
   return (

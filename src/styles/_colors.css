@@ -10,6 +10,11 @@
     --muted: var(--color-zinc-200);
     --muted-foreground: var(--color-zinc-500);
     --border: var(--color-zinc-300);
+
+    --warning: var(--color-orange-300);
+    --info: var(--color-cyan-400);
+    --success: var(--color-gray-400);
+    --danger: var(--color-red-400);
   }
 }
 
@@ -24,4 +29,9 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
+
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
 }

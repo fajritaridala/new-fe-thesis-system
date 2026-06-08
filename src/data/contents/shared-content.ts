@@ -1,4 +1,4 @@
-const GLOBAL_CONTENT = {
+const SHARED_CONTENT = {
   navbar: {
     title: "Sipena.",
     icon: "Menu",
@@ -15,6 +15,7 @@ const GLOBAL_CONTENT = {
       aria_label: "Submit",
       label: "Masuk",
       href: "/login",
+      icon: "LogIn",
     },
   },
   footer: {
@@ -56,4 +57,4 @@ const GLOBAL_CONTENT = {
   },
 } as const;
 
-export default GLOBAL_CONTENT;
+export default SHARED_CONTENT;

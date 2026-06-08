@@ -1,21 +1,20 @@
 "use client";
 
-import LucideIcon from "@/components/Icon";
+import LucideIcon from "@/components/shared/lucide-icon";
 import { Button } from "@/components/ui/button";
-import GLOBAL_CONTENT from "@/data/contents/global";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useState } from "react";
+import { NavbarProps } from ".";
 
-export default function MobileMenu() {
-  const { icon, labels, links, login } = GLOBAL_CONTENT.navbar;
+export default function MobileMenu({ data }: NavbarProps) {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   const handleOpenMenu = () => setIsOpenMenu(!isOpenMenu);
 
   return (
     <>
       <button onClick={handleOpenMenu}>
-        <LucideIcon icon={icon} size={22} className="hover:text-primary" />
+        <LucideIcon icon={data.icon} size={22} className="hover:text-primary" />
       </button>
 
       <div
@@ -27,14 +26,14 @@ export default function MobileMenu() {
         <div className="">
           <div className="border-border flex justify-between border-b px-4 pb-6">
             <h2 className="text-muted-foreground uppercase">
-              {labels.heading}
+              {data.labels.heading}
             </h2>
             <button onClick={handleOpenMenu}>
-              <p className="hover:text-primary text-sm">{labels.back}</p>
+              <p className="hover:text-primary text-sm">{data.labels.back}</p>
             </button>
           </div>
           <ul>
-            {links.map((link, index) => (
+            {data.links.map((link, index) => (
               <li key={index}>
                 <Link
                   onClick={handleOpenMenu}
@@ -58,11 +57,11 @@ export default function MobileMenu() {
           <Button
             onClick={handleOpenMenu}
             asChild
-            aria-label={login.aria_label}
+            aria-label={data.login.aria_label}
             size="lg"
             className="w-full"
           >
-            <Link href={login.href}>{login.label}</Link>
+            <Link href={data.login.href}>{data.login.label}</Link>
           </Button>
         </div>
       </div>

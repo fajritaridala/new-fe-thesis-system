@@ -1,7 +1,8 @@
+import LucideIcon from "@/components/shared/lucide-icon";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { SharedLayoutProps } from "@/types/layout";
 import Link from "next/link";
+import { SharedLayoutProps } from "../layout";
 
 export default function AuthLayout({ children }: SharedLayoutProps) {
   return (
@@ -13,7 +14,10 @@ export default function AuthLayout({ children }: SharedLayoutProps) {
           variant="none"
           className="text-primary hover:text-primary lg:text-foreground h-4 border-0 p-0 lg:h-8"
         >
-          <Link href="/">Kembali</Link>
+          <Link href="/">
+            <LucideIcon icon="ArrowLeft" className="size-5" />
+            <span>Kembali</span>
+          </Link>
         </Button>
       </div>
       <Card className="bg-background-light w-sm ring-0 lg:w-md lg:py-8">

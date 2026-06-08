@@ -6,15 +6,15 @@ export const HOME_CONTENT = {
       "Daftar, ikuti ujian, dan terima sertifikat digital anti-palsu langsung di jaringan blockchain, semua dalam satu platform.",
     cta: [
       {
-        href: "#",
+        href: "/service",
         label: "Daftar Ujian Sekarang",
-        icon: "ChevronRight",
+        icon: "ArrowUpRight",
         variant: "default",
       },
       {
-        href: "#",
+        href: "#workflow",
         label: "Lihat Cara Kerjanya",
-        icon: "ChevronRight",
+        icon: "ArrowRight",
         variant: "outline",
       },
     ],
@@ -26,16 +26,22 @@ export const HOME_CONTENT = {
       "Sipena mengintegrasikan teknologi Blockchain dan Smart Contract untuk menghadirkan ekosistem yang sepenuhnya transparan, otomatis, dan bebas dari risiko pemalsuan.",
     cards: [
       {
+        icon: "FingerprintPattern",
+        color: "primary",
         title: "Keamanan Permanen",
         describe:
           "Sertifikat diterbitkan langsung ke jaringan blockchain terdesentralisasi. Permanen dan tidak bisa diubah.",
       },
       {
+        icon: "Zap",
+        color: "warning",
         title: "Otomatisasi Penuh",
         describe:
           "Smart contract memproses verifikasi skor secara mandiri. Bebas birokrasi dan intervensi pihak ketiga.",
       },
       {
+        icon: "ScanQrCode",
+        color: "info",
         title: "Validasi Instan",
         describe:
           "Pihak mana pun dapat memverifikasi keaslian sertifikat secara real-time, cukup dengan satu tautan.",
@@ -73,6 +79,7 @@ export const HOME_CONTENT = {
     cta: {
       href: "#",
       label: "Mulai Ujian Sekarang",
+      icon: "ArrowUpRight",
     },
   },
 } as const;

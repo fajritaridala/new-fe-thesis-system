@@ -1,9 +1,13 @@
-import GLOBAL_CONTENT from "@/data/contents/global";
-import MobileMenu from "./MobileMenu";
-import DesktopMenu from "./DesktopMenu";
+import MobileMenu from "./mobile-menu";
+import DesktopMenu from "./desktop-menu";
+import SHARED_CONTENT from "@/data/contents/shared-content";
+
+export interface NavbarProps {
+  data: typeof SHARED_CONTENT.navbar;
+}
 
 export default function Navbar() {
-  const { navbar } = GLOBAL_CONTENT;
+  const { navbar } = SHARED_CONTENT;
 
   return (
     <nav className="bg-background-light border-border fixed z-30 flex w-full items-center-safe justify-between border-b p-4 lg:px-16 lg:py-2">
@@ -11,10 +15,10 @@ export default function Navbar() {
         {navbar.title}
       </h1>
       <div className="lg:hidden">
-        <MobileMenu />
+        <MobileMenu data={navbar} />
       </div>
       <div className="hidden lg:block">
-        <DesktopMenu />
+        <DesktopMenu data={navbar} />
       </div>
     </nav>
   );
