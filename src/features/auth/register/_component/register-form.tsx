@@ -12,7 +12,10 @@ export default function RegisterForm({ data }: RegisterFormProps) {
       <FieldGroup className="gap-4">
         {data.map(({ id, label, placeholder, type, required }, index) => (
           <Field key={index}>
-            <FieldLabel>{label}</FieldLabel>
+            <FieldLabel className="gap-1">
+              {label}
+              <span className="text-danger">*</span>
+            </FieldLabel>
             <Input
               id={id}
               placeholder={placeholder}
