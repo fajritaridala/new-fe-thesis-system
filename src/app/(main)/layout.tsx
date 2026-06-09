@@ -6,7 +6,7 @@ export default function MainLayout({ children }: SharedLayoutProps) {
   return (
     <>
       <Navbar />
-      <main className="bg-background px-4 lg:px-18">{children}</main>
+      <main className="bg-background px-4 lg:px-24">{children}</main>
       <Footer />
     </>
   );

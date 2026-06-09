@@ -9,7 +9,7 @@ const SHARED_CONTENT = {
     links: [
       { label: "Beranda", href: "/", icon: "House" },
       { label: "Layanan", href: "/service", icon: "Layers" },
-      { label: "Verifikasi", href: "/verify", icon: "ShieldCheck" },
+      { label: "Verifikasi", href: "/certificate/verify", icon: "ShieldCheck" },
     ],
     login: {
       aria_label: "Submit",

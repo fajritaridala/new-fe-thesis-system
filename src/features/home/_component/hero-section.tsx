@@ -1,5 +1,5 @@
 import { HeroHeading } from "@/components/shared/heading";
-import LucideIcon from "@/components/shared/lucide-icon";
+import LucideIcon from "@/components/shared/lucide-icon-render";
 import { Button } from "@/components/ui/button";
 import { HOME_CONTENT } from "@/data/contents/main/home-content";
 import Link from "next/link";

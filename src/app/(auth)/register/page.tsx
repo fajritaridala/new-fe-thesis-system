@@ -1,5 +1,5 @@
+import RegisterContainer from "@/features/auth/register";
 import { Metadata } from "next";
-import RegisterContainer from "./_components/register-container";
 
 export const metadata: Metadata = {
   title: "Sipena - Daftar akun",

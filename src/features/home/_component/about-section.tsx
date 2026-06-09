@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import LucideIcon from "@/components/shared/lucide-icon";
+import LucideIcon from "@/components/shared/lucide-icon-render";
 import { HOME_CONTENT } from "@/data/contents/main/home-content";
 
 interface AboutSectionProps {
@@ -16,7 +16,7 @@ export default function About({ data }: AboutSectionProps) {
   return (
     <section
       id="about"
-      className="bg-background-light grid grid-cols-1 gap-6 px-4 py-8 lg:gap-12 lg:rounded-2xl lg:px-8 lg:py-16"
+      className="bg-background-light grid grid-cols-1 gap-6 rounded-3xl px-4 py-8 lg:gap-12 lg:px-8 lg:py-16"
     >
       <div className="lg:text-center">
         <Heading
@@ -30,13 +30,13 @@ export default function About({ data }: AboutSectionProps) {
         {data.cards.map(({ title, describe, icon, color }, index) => (
           <Card
             key={index}
-            className="bg-background lg:bg-background-light border-border rounded-2xl border shadow-none ring-0 transition-all delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+            className="bg-background lg:bg-background-light border-border border shadow-none ring-0 transition-all delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg lg:rounded-2xl"
           >
             <CardHeader>
-              <CardTitle className="font-sora flex flex-col gap-4 text-xl font-bold tracking-tight capitalize lg:gap-6 lg:text-3xl">
+              <CardTitle className="font-sora flex flex-col gap-4 text-xl font-bold tracking-tight capitalize lg:gap-6 lg:text-2xl">
                 <LucideIcon
                   icon={icon}
-                  className={`size-8 lg:size-10 text-${color}`}
+                  className={`size-8 lg:size-10 ${color}`}
                 />
                 <span>{title}</span>
               </CardTitle>

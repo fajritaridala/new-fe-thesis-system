@@ -6,8 +6,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { AUTH_CONTENT } from "@/data/contents/auth-content";
-import RegisterForm from "./register-form";
 import { Button } from "@/components/ui/button";
+import RegisterForm from "./_component/register-form";
 
 export default function RegisterContainer() {
   const { title, description, cta, forms } = AUTH_CONTENT.register;
@@ -16,7 +16,7 @@ export default function RegisterContainer() {
     <>
       <CardHeader>
         <CardTitle>
-          <span className="font-sora text-primary text-2xl capitalize lg:text-3xl">
+          <span className="font-sora text-primary text-xl capitalize lg:text-2xl">
             {title}
           </span>
         </CardTitle>

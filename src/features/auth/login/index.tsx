@@ -1,4 +1,4 @@
-import LucideIcon from "@/components/shared/lucide-icon";
+import LucideIcon from "@/components/shared/lucide-icon-render";
 import { Button } from "@/components/ui/button";
 import {
   CardAction,

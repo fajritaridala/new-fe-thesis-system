@@ -1,4 +1,4 @@
-import LucideIcon from "./lucide-icon";
+import LucideIcon from "./lucide-icon-render";
 import Link from "next/link";
 import SHARED_CONTENT from "@/data/contents/shared-content";
 
@@ -6,7 +6,7 @@ export default function Footer() {
   const { about, contact, copyright, links } = SHARED_CONTENT.footer;
 
   return (
-    <footer className="bg-background-light mt-12 space-y-8 px-4 py-8 lg:mt-16 lg:space-y-12 lg:px-16 lg:py-14">
+    <footer className="bg-background-light mt-12 space-y-8 px-4 py-8 lg:mt-16 lg:space-y-12 lg:px-24 lg:py-14">
       <div className="grid-cols-4 space-y-8 lg:grid">
         <div className="space-y-2 lg:col-span-2">
           <h1 className="font-sora text-lg font-medium">{about.title}</h1>

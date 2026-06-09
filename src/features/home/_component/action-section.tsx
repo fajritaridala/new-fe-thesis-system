@@ -1,4 +1,4 @@
-import LucideIcon from "@/components/shared/lucide-icon";
+import LucideIcon from "@/components/shared/lucide-icon-render";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {

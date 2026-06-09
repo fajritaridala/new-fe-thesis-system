@@ -1,6 +1,6 @@
 import { HeroHeading } from "@/components/shared/heading";
-import VerifyCard from "./verify-card";
 import { VERIFY_CONTENT } from "@/data/contents/main/verify-content";
+import VerifyCard from "./_component/verify-card";
 
 export default function VerifyContainer() {
   const { title, heading, description } = VERIFY_CONTENT;

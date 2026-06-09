@@ -27,21 +27,21 @@ export const HOME_CONTENT = {
     cards: [
       {
         icon: "FingerprintPattern",
-        color: "primary",
+        color: "text-primary",
         title: "Keamanan Permanen",
         describe:
           "Sertifikat diterbitkan langsung ke jaringan blockchain terdesentralisasi. Permanen dan tidak bisa diubah.",
       },
       {
         icon: "Zap",
-        color: "warning",
+        color: "text-warning",
         title: "Otomatisasi Penuh",
         describe:
           "Smart contract memproses verifikasi skor secara mandiri. Bebas birokrasi dan intervensi pihak ketiga.",
       },
       {
         icon: "ScanQrCode",
-        color: "info",
+        color: "text-info",
         title: "Validasi Instan",
         describe:
           "Pihak mana pun dapat memverifikasi keaslian sertifikat secara real-time, cukup dengan satu tautan.",
